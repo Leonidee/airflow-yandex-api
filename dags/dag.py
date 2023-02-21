@@ -36,7 +36,7 @@ HEADERS = {
     "X-Project": "True",
 }
 
-REPORT_DATE = datetime.today() - timedelta(days=1)
+REPORT_DATE = datetime.today().date() - timedelta(days=1)
 
 UPDATE_DIM_SQL = "sql/update-dimension-tables.sql"
 UPDATE_FACT_SQL = "sql/update-fact-tables.sql"
@@ -48,8 +48,8 @@ engine = connect_to_database(
 
 @dag(
     dag_id="main-dag",
-    schedule_interval="0 0 * * *",
-    start_date=datetime(2023, 2, 20),
+    schedule_interval="0 1 * * *",
+    start_date=datetime(2023, 2, 21),
     default_args={
         "owner": "leonide",
         "retries": 0,

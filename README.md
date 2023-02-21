@@ -21,3 +21,4 @@ In `init_database` folder `init.py` python file will:
 # DAGs
 
 This DAG will request Yandex API for new batch of data of current data. If data 
+

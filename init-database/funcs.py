@@ -20,7 +20,7 @@ def create_schema_and_tables(engine: Engine, sql_file: str) -> None:
         with engine.connect() as conn:
             conn.execute(query)
         logger.info(
-            f"{sql_file} file was successfully executed. Schemas and tables was initialized."
+            f"{sql_file} file was successfully executed. Schemas and tables were initialized."
         )
     except Exception:
         logger.exception(
