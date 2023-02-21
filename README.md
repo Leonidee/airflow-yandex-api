@@ -22,3 +22,5 @@ In `init_database` folder `init.py` python file will:
 
 This DAG will request Yandex API for new batch of data of current data. If data 
 
+![main-dag](https://github.com/Leonidee/airflow-yandex-api/blob/master/dags/main-dag.png?raw=true)
+
